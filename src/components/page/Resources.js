@@ -19,8 +19,8 @@ const Resources = () => {
                 <AppBar color="transparent" elevation="0" position="static" sx={{width: '100%', height: '20vh'}}>
                         <Toolbar>
                             <Stack direction="row" spacing={6} sx={{paddingLeft: '.5vw', paddingTop: '2vh'}}>
-                                <Typography> <RoomRoundedIcon sx={{color: "#5a33e6"}} /> Housing Services</Typography>
-                                <Typography> <RoomRoundedIcon sx={{color: "#c81919"}} /> Healthcare Services</Typography>
+                                <Typography> <RoomRoundedIcon sx={{color: "#5a33e6"}} /> Affordable Housing</Typography>
+                                <Typography> <RoomRoundedIcon sx={{color: "#c81919"}} /> Community Health Centers</Typography>
                                 <Typography> <RoomRoundedIcon sx={{color: "#e4d425"}} /> Child Care Services</Typography>
                                 <Typography> <RoomRoundedIcon sx={{color: "#16a222"}} /> Food Resources</Typography>
                                 <Typography> <RoomRoundedIcon sx={{color: "#7a4906"}} /> Clothing Resources</Typography> 
