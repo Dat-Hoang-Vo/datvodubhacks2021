@@ -27,7 +27,7 @@ const Family2 = (props) => {
                         <Typography variant="body1">By: {props.deadline}</Typography>
                     </Box>
 
-                    <Box sx={{marginBottom: '2vh', width: '95%'}}>
+                    <Box sx={{marginBottom: '2vh', width: '95%', height: '12vh'}}>
                         <Typography variant="body2">Eu incididunt qui amet excepteur nostrud officia aute sint occaecat labore magna cupidatat Lorem. Velit in deserunt nulla laborum eiusmod minim veniam ex culpa ea do. Nisi amet deserunt qui voluptate sit veniam incididunt officia laborum ea excepteur ut. Esse quis velit nulla quis labore aute officia tempor sint ex. Deserunt commodo in duis cillum officia. Aliqua ad amet ullamco ut elit irure veniam nostrud eiusmod. Eu labore do cillum laboris.</Typography>
                     </Box>
 

@@ -8,6 +8,7 @@ import {
 import Donation from "./components/page/Donation";
 import HelpingHand from "./components/page/HelpingHand";
 import Home from "./components/page/Home";
+import Resources from "./components/page/Resources";
 
 import TopNav from "./components/part/TopNav";
 import "./App.css";
@@ -21,7 +22,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/resources">
-          <TopNav />
+          <Resources />
         </Route>
         <Route exact path="/donate">
           <Donation />

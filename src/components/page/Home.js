@@ -39,7 +39,7 @@ const Home = () => {
                         <Link to="/" style={{textDecoration: "none", color: '#696969'}}>
                             <Tab value="resources" label="Home" sx={{fontSize: '1vw', textTransform: 'none'}} />
                         </Link>
-                        <Link to="/" style={{textDecoration: "none", color: '#696969'}}>
+                        <Link to="/resources" style={{textDecoration: "none", color: '#696969'}}>
                             <Tab value="resources" label="Resources" sx={{fontSize: '1vw', textTransform: 'none'}} />
                         </Link>
                         <Link to="/donate" style={{textDecoration: "none", color: '#696969'}}>
@@ -75,35 +75,43 @@ const Home = () => {
                     <KeyboardArrowUpRoundedIcon href="#section2" sx={{textAlign: 'center', width: '100%', fontSize: '3vw', position: 'absolute', top: '102vh', color: '#696969'}} />
                 </a>
                 <Box sx={{paddingTop: '20vh', width: '80%', textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'}}>
-                    <Typography variant="h2" sx={{fontWeight: '700', color: '#f0f0f0', textAlign: 'center', marginBottom: '14vh'}}>Services We've Gathered</Typography>
+                    <Typography variant="h2" sx={{fontWeight: '700', color: '#fffff0', textAlign: 'center', marginBottom: '14vh'}}>Services We've Gathered</Typography>
 
-                    <Box sx={{display: 'flex', width: '100%', marginRight: '0'}}>
+                    <Box sx={{display: 'flex', width: '100%'}}>
 
                         <Box sx={{width: '18vw', textAlign: 'center', paddingRight: '1vw'}}>
-                            <DiningOutlinedIcon sx={{fontSize: '7vw', color: '#f0f0f0', paddingBottom: '4vh'}} />
+                            <DiningOutlinedIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Food Services</Typography>
                             <Typography variant="body1">We have gathered a list of free or affordable food options</Typography>
                         </Box>
 
                         <Box sx={{width: '18vw', textAlign: 'center', paddingLeft: '1vw', paddingRight: '1vw'}}>
-                            <HomeWorkRoundedIcon sx={{fontSize: '7vw', color: '#f0f0f0', paddingBottom: '4vh'}} />
+                            <HomeWorkRoundedIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Housing Services</Typography>
                             <Typography variant="body1">We have gathered a list of affordable housing options</Typography>
                         </Box>
 
                         <Box sx={{width: '18vw', textAlign: 'center', paddingLeft: '1vw', paddingRight: '1vw'}}>
-                            <MedicalServicesRoundedIcon sx={{fontSize: '7vw', color: '#f0f0f0', paddingBottom: '4vh'}} />
+                            <MedicalServicesRoundedIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Medical Services</Typography>
                             <Typography variant="body1">We have gathered a list of affordable healthcare options</Typography>
                         </Box>
 
                         <Box sx={{width: '18vw', textAlign: 'center', paddingLeft: '1vw'}}>
-                            <ChildCareIcon sx={{fontSize: '7vw', color: '#f0f0f0', paddingBottom: '4vh'}} />
+                            <ChildCareIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Childcare Services</Typography>
                             <Typography variant="body1">We have gathered a list of affordable chilcare options</Typography>
                         </Box>
-
                     </Box>
+
+                    <Box sx={{paddingTop: '10vh'}}>
+                        <Link to="/resources" style={{textDecoration: 'none'}}>
+                        <Button variant="contained" 
+                        sx={{fontSize: '1.2vw', width: '16vw', backgroundColor: '#fffff0', color: '#2eaab3', ":hover": {backgroundColor: '#fffff0'}}}
+                        >Visit Resources</Button>
+                        </Link>
+                    </Box>
+
                 </Box>
                 <a href="#section3">
                 <KeyboardArrowDownRoundedIcon sx={{textAlign: 'center', width: '100%', fontSize: '3vw', position: 'absolute', top: '192vh', color: '#696969'}} />
@@ -118,8 +126,13 @@ const Home = () => {
                     <Grid container>
                         <Grid item xl={6}>
                             <Typography variant="h2" sx={{fontWeight: '700', paddingBottom: '10vh'}}>Donate Today</Typography>
-                            <Typography variant="body1" sx={{marginBottom: '5vh'}}>Culpa tempor non sit cillum incididunt est pariatur duis anim do ullamco proident occaecat. Est commodo sunt ullamco ad pariatur et. Velit quis pariatur duis nulla id commodo adipisicing in mollit anim nisi elit. Irure qui pariatur nostrud Lorem labore esse nulla mollit adipisicing sit dolor proident id. Sunt sint ea cupidatat et sunt ea occaecat. Officia anim ipsum est exercitation ipsum mollit. Fugiat duis id non quis tempor qui ut esse sint cupidatat.</Typography>
-                            <Button variant="contained" sx={{backgroundColor: '#343a40', width: '10vw', ":hover": {backgroundColor: '#343a40'}, marginRight: '6vw'}}>{<PaymentIcon sx={{marginRight: '.7vw'}} />}Donate</Button>
+                            <Typography variant="body1" sx={{marginBottom: '5vh'}}>Culpa tempor non sit cillum incididunt est pariatur duis anim do ullamco proident occaecat. Est commodo sunt ullamco ad
+                                pariatur et. Velit quis pariatur duis nulla id commodo adipisicing in mollit anim nisi elit. Irure qui pariatur nostrud Lorem labore esse nulla mollit adipisicing sit 
+                                dolor proident id. Sunt sint ea cupidatat et sunt ea occaecat. Officia anim ipsum est exercitation ipsum mollit. Fugiat duis id non quis tempor qui ut esse sint cupidatat.
+                            </Typography>
+                            <Link to="/donate">
+                                <Button variant="contained" sx={{backgroundColor: '#343a40', width: '10vw', ":hover": {backgroundColor: '#343a40'}, marginRight: '6vw'}}>{<PaymentIcon sx={{marginRight: '.7vw'}} />}Donate</Button>
+                            </Link>
                             <Button variant="contained" sx={{backgroundColor: '#343a40', width: '10vw', ":hover": {backgroundColor: '#343a40'}}}>{<ShareIcon sx={{marginRight: '.7vw'}} />}Share</Button>
                         </Grid>
                         <Grid item xl={6}>
