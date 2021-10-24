@@ -14,7 +14,7 @@ import RoomRoundedIcon from '@mui/icons-material/RoomRounded';
 const Resources = () => {
 
     return (
-        <Box sx={{width: '100vw', height: '100vh', backgroundColor: '#fffff0'}}>
+        <Box sx={{width: '100vw', height: '99vh', backgroundColor: '#fffff0'}}>
             <Box sx={{width: '100%', height: '10vh'}}>
                 <AppBar color="transparent" elevation="0" position="static" sx={{width: '100%', height: '20vh'}}>
                         <Toolbar>

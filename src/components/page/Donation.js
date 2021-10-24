@@ -35,7 +35,7 @@ const Donation = () => {
     }, [])
 
     return (
-        <Box sx={{width: '100vw'}}>
+        <Box sx={{width: '99.1vw'}}>
             <Box sx={{height: '60vh', backgroundColor: '#fffff0'}} id="section1">
                 <AppBar color="transparent" elevation="0" position="static" sx={{width: '100%', height: '20vh'}}>
                     <Toolbar>

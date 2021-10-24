@@ -27,7 +27,7 @@ import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRound
 
 const Home = () => {
     return(
-        <Box sx={{width: '100vw'}} id="section1">
+        <Box sx={{width: '99.1vw'}} id="section1">
 
             <Box sx={{height: '100vh', backgroundColor: '#fffff0'}}>
                 <AppBar color="transparent" elevation="0" position="static" sx={{width: '100%', height: '20vh'}}>
