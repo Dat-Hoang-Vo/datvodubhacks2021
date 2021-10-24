@@ -235,7 +235,8 @@ const data = [
              <Marker
              latitude={information.Latitude}
              longitude={information.Longitude}>
-             <MapPin resource_type={information.Resource_Type} company_name={information.Company_Name} company_phone={information.Contact} address={information['Address:']} link={information.link} />
+
+             <MapPin resource_type={information.Resource_Type} company_name={information.Company_Name} company_phone={information.Contact} link={information.link} />
 
              </Marker>
           ))}

@@ -25,6 +25,8 @@ import Resource from "../part/Resource";
 import { useState } from "react";
 import Map from "../part/Map";
 
+import RoomRoundedIcon from '@mui/icons-material/RoomRounded';
+
 
 const Resources = () => {
 
@@ -53,21 +55,21 @@ const Resources = () => {
                     </AppBar>
             </Box>
             <Box>
-                <Box sx={{height: '80vh', width: '100vw'}}>
+                <Box sx={{height: '90vh', width: '100vw'}}>
                     
                     <Box sx={{display: 'inline-block', width: "12%", position: 'static'}}>
                         <Drawer variant="permanent" anchor="left" elevation={0} sx={{
                             flexShrink: 0,
                             '& .MuiDrawer-paper': {
                             boxSizing: 'border-box',
-                            height: '65vh',
+                            height: '90vh',
                             width: "12%",
                             top: '10vh'
                             }
                         }}>
 
-                        <Typography variant="h6" align="center">Resources</Typography>
-                        <Typography>Housing Services</Typography>
+                        <Typography variant="h6" align="center">Legend</Typography>
+                        <Typography> <RoomRoundedIcon sx={{color: "#5a33e6"}} /> Housing Services</Typography>
                         <Stack>
                             <Resource />
                         </Stack>

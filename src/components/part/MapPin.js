@@ -55,6 +55,7 @@ const MapPin = (props) => {
                 <Link href={props.link}>
                     <Typography>Visit</Typography>
                 </Link>
+                
             </Popover>
 
         </Box>
