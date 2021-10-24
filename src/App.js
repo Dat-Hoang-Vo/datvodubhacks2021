@@ -4,6 +4,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+import Donation from "./components/page/Donation";
 import HelpingHand from "./components/page/HelpingHand";
 import Home from "./components/page/Home";
 
@@ -22,7 +24,7 @@ function App() {
           <TopNav />
         </Route>
         <Route exact path="/donate">
-          <HelpingHand />
+          <Donation />
         </Route>
       </Switch>
     </Router>

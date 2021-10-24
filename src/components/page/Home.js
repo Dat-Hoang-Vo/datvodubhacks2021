@@ -37,13 +37,13 @@ const Home = () => {
                         <p style={{flexGrow: '1'}}></p>
                         <Box style={{marginRight: '8vw'}}>
                         <Link to="/" style={{textDecoration: "none", color: '#696969'}}>
-                            <Tab value="resources" label="Home" sx={{fontSize: '1vw'}} />
+                            <Tab value="resources" label="Home" sx={{fontSize: '1vw', textTransform: 'none'}} />
                         </Link>
                         <Link to="/" style={{textDecoration: "none", color: '#696969'}}>
-                            <Tab value="resources" label="Resources" sx={{fontSize: '1vw'}} />
+                            <Tab value="resources" label="Resources" sx={{fontSize: '1vw', textTransform: 'none'}} />
                         </Link>
                         <Link to="/donate" style={{textDecoration: "none", color: '#696969'}}>
-                            <Tab value="helping hand" label="Donate" sx={{fontSize: '1vw'}} />
+                            <Tab value="helping hand" label="Donate" sx={{fontSize: '1vw', textTransform: 'none'}} />
                         </Link>
                         </Box>
                     </Toolbar>
