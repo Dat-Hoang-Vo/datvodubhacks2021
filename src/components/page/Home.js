@@ -141,7 +141,7 @@ const Home = () => {
                 </Container>
             </Box>
 
-            <Box sx={{height: '14vh', backgroundColor: '#2eaab3', textAlign: 'center'}}>
+            <Box sx={{height: '15vh', backgroundColor: '#2eaab3', textAlign: 'center'}}>
                 <Box sx={{paddingTop: '4vh'}}>
                     <FacebookIcon sx={{color: "#f0f0f0", fontSize: '2.4vw', marginRight: '2vw'}} />
                     <TwitterIcon sx={{color: "#f0f0f0", fontSize: '2.4vw', marginRight: '2vw'}}  />
