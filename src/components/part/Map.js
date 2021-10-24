@@ -1,8 +1,8 @@
 import ReactMapGL, {Marker} from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import mapboxgl from 'mapbox-gl';
-mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 import React, {useState} from 'react';
+import mapboxgl from 'mapbox-gl';
+
 
 
 import MapPin from './MapPin';
