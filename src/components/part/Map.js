@@ -1,8 +1,10 @@
-import mapboxgl from 'mapbox-gl';
-import React, {useState} from 'react';
 import ReactMapGL, {Marker} from 'react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+import React, {useState} from 'react';
 
-import RoomRoundedIcon from '@mui/icons-material/RoomRounded';
+
 import MapPin from './MapPin';
 
 const data = [
@@ -236,7 +238,7 @@ const data = [
              latitude={information.Latitude}
              longitude={information.Longitude}>
 
-             <MapPin resource_type={information.Resource_Type} company_name={information.Company_Name} company_phone={information.Contact} link={information.link} />
+             <MapPin resource_type={information.Resource_Type} company_name={information.Company_Name} adress={information['Address:']} company_phone={information.Contact} link={information.link} />
 
              </Marker>
           ))}
