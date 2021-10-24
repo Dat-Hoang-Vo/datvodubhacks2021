@@ -53,7 +53,7 @@ const Resources = () => {
                     </AppBar>
             </Box>
             <Box>
-                <Box sx={{height: '65vh', width: '100vw'}}>
+                <Box sx={{height: '80vh', width: '100vw'}}>
                     
                     <Box sx={{display: 'inline-block', width: "12%", position: 'static'}}>
                         <Drawer variant="permanent" anchor="left" elevation={0} sx={{
@@ -75,25 +75,11 @@ const Resources = () => {
                         </Drawer>
                     </Box>
                     
-                    <Box sx={{display: 'inline-block', width: "88%", height: '65vh', backgroundColor: '#2eaab3'}}>
+                    <Box sx={{display: 'inline-block', width: "88%", height: '100%', backgroundColor: '#2eaab3'}}>
                             <Map />
                     </Box>
                     
                 </Box>
-
-
-                <Grid container>
-
-                    <Grid item xl={1.5}>
-                        <Typography>Legend</Typography>
-                    </Grid>
-
-                    <Grid item xl={10.5}>
-                        <Typography>Description</Typography>
-                    </Grid>
-
-
-                </Grid>
             </Box>
         </Box>
     )
