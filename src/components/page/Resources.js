@@ -41,7 +41,7 @@ const Resources = () => {
                     </AppBar>
             </Box>
             <Box>
-                <Box sx={{height: '90vh', width: '100vw'}}>
+                <Box sx={{height: '89.1vh', width: '100vw'}}>
                 
                     
                     <Box sx={{display: 'inline-block', width: "100%", height: '100%', backgroundColor: '#2eaab3'}}>
