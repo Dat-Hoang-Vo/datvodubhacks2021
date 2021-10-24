@@ -53,9 +53,9 @@ const MapPin = (props) => {
                 <Typography>{props.company_phone}</Typography>
                 <Typography>{props.address}</Typography>
                 <Link href={props.link}>
-                    <Typography>Visit</Typography>
+                    <Button sx={{float: 'left'}}>Visit</Button>
                 </Link>
-                
+                <Button sx={{float: 'right'}}>Donate</Button>
             </Popover>
 
         </Box>

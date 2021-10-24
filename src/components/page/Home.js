@@ -1,14 +1,12 @@
 import { Box } from "@mui/system";
-import TopNav from "../part/TopNav";
 
 import familyHome from "../image/homeFamily.png"
 import donateHome from "../image/homeDonate.png"
-import { Container, Grid, List, ListItemText, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 
-import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { Link } from 'react-router-dom';
-import { AppBar, Button, Divider, Toolbar } from '@mui/material';
+import { AppBar, Button, Toolbar } from '@mui/material';
 import logo from '../image/homelogo.png'
 
 import DiningOutlinedIcon from '@mui/icons-material/DiningOutlined';
@@ -30,6 +28,7 @@ import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRound
 const Home = () => {
     return(
         <Box sx={{width: '100vw'}} id="section1">
+
             <Box sx={{height: '100vh', backgroundColor: '#fffff0'}}>
                 <AppBar color="transparent" elevation="0" position="static" sx={{width: '100%', height: '20vh'}}>
                     <Toolbar>
@@ -48,16 +47,17 @@ const Home = () => {
                         </Box>
                     </Toolbar>
                 </AppBar>
+
                 <Container>
                     <Grid container spacing={12} sx={{paddingTop: '10vh'}}>
                         <Grid item xl={7}>
-                            <Typography variant="h3" sx={{paddingBottom: '4vh', fontWeight: '800'}}>Help Families In Need</Typography>
-                            <Typography variant="body1" sx={{color: "#696969", fontSize: '1vw', paddingBottom: '4vh'}}>Lorem Ipsum banana bandana boobana Lorem Ipsum banana bandana boobana</Typography>
-                            <Typography variant="body1" sx={{color: "#696969", fontSize: '1vw'}}>You can help by:</Typography>
+                            <Typography variant="h3" sx={{paddingBottom: '4vh', fontWeight: '800'}}>Let's connect Seattle</Typography>
+                            <Typography variant="body1" sx={{color: "#696969", fontSize: '1vw', paddingBottom: '4vh'}}>Hello! Welcome to Live4Less. Here, you can browse free/affordable resources in the Greater Seattle Area or you can help give to a family in need.</Typography>
+                            <Typography variant="body1" sx={{color: "#696969", fontSize: '1vw'}}>How can I help?</Typography>
                             <ul style={{color: "#696969", fontSize: '.9vw'}}>
-                                <li>Donating to a family's cause</li>
-                                <li>Sharing this website</li>
-                                <li>Recommending resources</li>
+                                <li style={{paddingBottom: '.6vh'}}>Donate to a family's cause</li>
+                                <li style={{paddingBottom: '.6vh'}}>Share this website</li>
+                                <li style={{paddingBottom: '.6vh'}}>Recommend resources</li>
                             </ul>
                         </Grid>
                         <Grid item xl={3}>
@@ -82,25 +82,25 @@ const Home = () => {
                         <Box sx={{width: '18vw', textAlign: 'center', paddingRight: '1vw'}}>
                             <DiningOutlinedIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Food Services</Typography>
-                            <Typography variant="body1">We have gathered a list of free or affordable food options</Typography>
+                            <Typography variant="body1">Free and affordable food options provided for our community</Typography>
                         </Box>
 
                         <Box sx={{width: '18vw', textAlign: 'center', paddingLeft: '1vw', paddingRight: '1vw'}}>
                             <HomeWorkRoundedIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Housing Services</Typography>
-                            <Typography variant="body1">We have gathered a list of affordable housing options</Typography>
+                            <Typography variant="body1">Low Income housing options around the Seattle area</Typography>
                         </Box>
 
                         <Box sx={{width: '18vw', textAlign: 'center', paddingLeft: '1vw', paddingRight: '1vw'}}>
                             <MedicalServicesRoundedIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Medical Services</Typography>
-                            <Typography variant="body1">We have gathered a list of affordable healthcare options</Typography>
+                            <Typography variant="body1">Low cost medical services for those in need</Typography>
                         </Box>
 
                         <Box sx={{width: '18vw', textAlign: 'center', paddingLeft: '1vw'}}>
                             <ChildCareIcon sx={{fontSize: '7vw', color: '#fffff0', paddingBottom: '4vh'}} />
                             <Typography variant="h4" sx={{paddingBottom: '1vh'}}>Childcare Services</Typography>
-                            <Typography variant="body1">We have gathered a list of affordable chilcare options</Typography>
+                            <Typography variant="body1">Affordable childcare options for working parent(s)</Typography>
                         </Box>
                     </Box>
 
@@ -108,7 +108,7 @@ const Home = () => {
                         <Link to="/resources" style={{textDecoration: 'none'}}>
                         <Button variant="contained" 
                         sx={{fontSize: '1.2vw', width: '16vw', backgroundColor: '#fffff0', color: '#2eaab3', ":hover": {backgroundColor: '#fffff0'}}}
-                        >Visit Resources</Button>
+                        >View Resources</Button>
                         </Link>
                     </Box>
 
@@ -125,10 +125,9 @@ const Home = () => {
                 <Container sx={{paddingTop: '12vh'}}>
                     <Grid container>
                         <Grid item xl={6}>
-                            <Typography variant="h2" sx={{fontWeight: '700', paddingBottom: '10vh'}}>Donate Today</Typography>
-                            <Typography variant="body1" sx={{marginBottom: '5vh'}}>Culpa tempor non sit cillum incididunt est pariatur duis anim do ullamco proident occaecat. Est commodo sunt ullamco ad
-                                pariatur et. Velit quis pariatur duis nulla id commodo adipisicing in mollit anim nisi elit. Irure qui pariatur nostrud Lorem labore esse nulla mollit adipisicing sit 
-                                dolor proident id. Sunt sint ea cupidatat et sunt ea occaecat. Officia anim ipsum est exercitation ipsum mollit. Fugiat duis id non quis tempor qui ut esse sint cupidatat.
+                            <Typography variant="h2" sx={{fontWeight: '700', paddingBottom: '10vh'}}>Meet our families</Typography>
+                            <Typography variant="body1" sx={{marginBottom: '5vh'}}>We all like to be generous when we can, but sometimes it's hard to know where to send that generosity. At Live4Less, we've found
+                            various families that are in need in the Seattle area who could use a small donation to help get by. Come visit our donations page to see which families are in need, and how you can help!
                             </Typography>
                             <Link to="/donate">
                                 <Button variant="contained" sx={{backgroundColor: '#343a40', width: '10vw', ":hover": {backgroundColor: '#343a40'}, marginRight: '6vw'}}>{<PaymentIcon sx={{marginRight: '.7vw'}} />}Donate</Button>
